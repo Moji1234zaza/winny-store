@@ -1,0 +1,8 @@
+/* Custom Font Import */
+@font-face {
+    font-family: 'Pnlukmai';
+    src: url('Pnlukmai-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
