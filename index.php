@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winny Store</title>
-    <link rel="icon" type="image/x-icon" href="/api/placeholder/image01.ico">
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- AOS Library -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>     
+    <?php       
+    include __DIR__ . '/system/class.php';
+    $use = new Bannawat;      
+    $fetchsettingwebsitedata = $use->fetchsettingwebsitedata('1');      
+    ?>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title><?php echo $fetchsettingwebsitedata['type1']; ?></title>     
+    <link rel="icon" type="image/x-icon" href="/api/placeholder/image01.ico">     
+    <!-- Material Icons -->     
+     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />     
+     <!-- Tailwind CSS -->     
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>     
+      <!-- AOS Library -->     
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <style>
@@ -35,7 +40,7 @@
     <nav class="bg-white shadow-md fixed w-full z-10">
         <div class="container mx-auto px-4 py-2 flex justify-between items-center">
             <a href="" class="flex items-center">
-                <img src="/api/placeholder/image01.jpg" alt="pimmytodgrob" class="w-10 h-10 rounded-full border-2 border-gray-200">
+            <img src="<?php echo $fetchsettingwebsitedata['type5']; ?>" alt="pimmytodgrob" class="w-10 h-10 rounded-full border-2 border-gray-200">
             </a>
             <div class="hidden md:flex space-x-8">
                 <a href="index.html" class="text-yellow-500 font-medium hover:text-yellow-600">หน้าแรก</a>
@@ -44,6 +49,7 @@
             <div>
                 <button class="bg-white-400 hover:bg-white-500 text-white px-4 py-1 rounded-md transition-colors duration-200"></button>
             </div>
+                
         </div>
     </nav>
 
@@ -51,7 +57,7 @@
     <div class="w-full pt-16 pb-4">
         <div class="container mx-auto px-4">
             <div class="flex justify-center mb-4">
-                <img src="/api/placeholder/Studio Craze.png" alt="Banner" class="w-full rounded-lg shadow-md">
+            <img src="<?php echo $fetchsettingwebsitedata['type6']; ?>" alt="Banner" class="w-full rounded-lg shadow-md">
             </div>
         </div>
     </div>
@@ -332,35 +338,37 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between">
                 <div class="mb-6 md:mb-0">
-                    <h3 class="text-xl font-bold mb-4">Winny Store</h3>
-                    <p class="max-w-md"> ˚ ₊ˑ̳𓊪♡ Re݂֯aּd ˚ ╺♯♬ིྀ 𓈒
-                        ｡ﾟﾟ･｡･ﾟﾟ。╺₊𓊘̵͙ โּo֯น݂เּงิน ﾟ𓈒⁎ (แจ้งคิว) = เּริ่ม֯งּ݂าน 𓈒 ﾟ₊ˑ̳𖠵
-                        ﾟ。☆ ｡ﾟ𓂂﹝ถּ้าไมּ่สะ݂֯ดּวก 𓈒 ˚ 𓊪╸ ּกรּ֯oก݂ฟּoร์ม ˚╺𓊪𖢟₊
-                        ﾟ･｡･ﾟ ᱸ ˳ˑ̳ˑ͙ 𓈒 ּสาม֯าּ݂รถโּoน݂֯จาּก ✦♬ིྀ╺̵ คิּวกּ่o֯น݂ได้นּะ֯คะ﹞𓂂
-                        
-                        ╺𓎭͙₊ ּรo֯งּาน ♡ 1-14 day 𓈒ᘏ⑅ ֯ᘏ
-                        ﹝นּานּ֯กว่าּ݂นั้น֯แจ้ง ˚ ₊ˑ̳𓊪 iּ֯n stּory﹞
-                        ˚ 𓈒♡ ꒰˳ˑ̳ ּรับ֯เּ݂งิน ˚ ╺̟ˑ̶͙ tּru֯eּmoּ֯ney wallet 𓈒
-                        𖠵𓎭̵͙♥ & kbank ﾟ₊𓎭̶͙ˑ̳ ᱸ ꒱ ตลอด 24 ชั่วโมง</p>
+                    <h3 class="text-xl font-bold mb-4"><?php echo $fetchsettingwebsitedata['type1']; ?></h3>
+					
+                    <p class="max-w-md">👇เช็คคิวที่นี่</p>
+					<a href='https://tinyurl.com/tayfan9c' class="text-white hover:text-yellow-200">
+					<span class="material-symbols-outlined">arrow_selector_tool</span>
+					
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">ติดต่อเรา</h3>
-                    <p>อีเมล: birschuthwm@gmail.com </p>
-                    <p>โทร: 066-015-2043</p>
+                    <p><?php echo $fetchsettingwebsitedata['type9']?> <?php echo $fetchsettingwebsitedata['type7']; ?></p>
+                    <p><?php echo $fetchsettingwebsitedata['type10']?> <?php echo $fetchsettingwebsitedata['type8']; ?></p>
                     <div class="flex space-x-4 mt-4">
-                        <a href="https://www.instagram.com/drawi.ngfamily/" class="text-white hover:text-yellow-200">
-                            <span class="material-icons">call</span>
+                        <a href="<?php echo $fetchsettingwebsitedata['type3']; ?>" class="text-white hover:text-yellow-200">
+                            <span class="material-icons">facebook</span>
                         </a>
                     </div>
+                    <div class="flex justify-end mt-6">
                 </div>
+                <a href="admin-login.php" class="inline-block bg-white text-yellow-500 font-medium py-2 px-6 rounded-lg hover:bg-yellow-100 transition-colors">
+                สำหรับผู้ดูแลระบบ
+            </a>
             </div>
-            <div class="border-t border-yellow-400 mt-6 pt-6 text-center">
-                <p>© 2025 Winny Store. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </div>          
+        <div class="border-t border-yellow-400 mt-6 pt-6 text-center">                 
+            <p>© 2025 <?php echo $fetchsettingwebsitedata['type1']; ?>. All rights reserved.</p>             
+        </div>         
+    </div>     
+</footer>
 
-    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <!-- SweetAlert2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.12/sweetalert2.min.js"></script>
@@ -382,7 +390,7 @@
 
         function addToCart(productId) {
     // Get product details from the productDetails object
-    const productDetails = {
+/*    const productDetails = {
         1: {
             name: 'การ์ดพิน',
             price: 18,
@@ -410,7 +418,7 @@
     
     if (!product) return;
     
-    // Simulate adding to cart with the actual product name and price
+*/    // Simulate adding to cart with the actual product name and price
     cart.push({
         id: productId,
         name: product.name,
@@ -582,9 +590,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Keep the viewProductDetails function as is and use the same data from addToCart
-function viewProductDetails(productId) {
+//function viewProductDetails(productId) {
     // Example product data - in a real app, you'd fetch this from your database
-    const productDetails = {
+/*    const productDetails = {
         1: {
             name: 'การ์ดพิน',
             price: 18,
@@ -622,8 +630,7 @@ function viewProductDetails(productId) {
         </div>
     </div>
     `;
-    
-    Swal.fire({
+*/    Swal.fire({
         title: product.name,
         html: html,
         showCancelButton: true,
