@@ -14,13 +14,6 @@ class Bannawat
         $result = $stmt->fetch();
         return $result;
     }
-
-    public function authcheck(){
-        if (empty($_SESSION['id'])) {
-            echo "<script>window.location.href = '/home' </script>";
-            exit();
-        }
-    }
   
     public function fetchsettingwebsitedata($id){
         $stmt = $this->db->prepare("SELECT * FROM setting_website WHERE id = :id");

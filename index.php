@@ -9,7 +9,7 @@
     <meta charset="UTF-8">     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">     
     <title><?php echo $fetchsettingwebsitedata['type1']; ?></title>     
-    <link rel="icon" type="image/x-icon" href="/api/placeholder/image01.ico">     
+    <link rel="icon" type="image/x-icon" href="assets/image01.jpg">     
     <!-- Material Icons -->     
      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />     
      <!-- Tailwind CSS -->     
@@ -44,7 +44,7 @@
             </a>
             <div class="hidden md:flex space-x-8">
                 <a href="index.html" class="text-yellow-500 font-medium hover:text-yellow-600">หน้าแรก</a>
-                <a href="howtobuy.html" class="text-gray-700 font-medium hover:text-yellow-500">วิธีซื้อ</a>
+                <a href="howtobuy.php" class="text-gray-700 font-medium hover:text-yellow-500">วิธีซื้อ</a>
             </div>
             <div>
                 <button class="bg-white-400 hover:bg-white-500 text-white px-4 py-1 rounded-md transition-colors duration-200"></button>
@@ -86,7 +86,7 @@
                             <!-- Slide 1: Collage -->
                             <div class="slide-item w-full flex-shrink-0" style="background-color: #ffecf9;">
                                 <div class="slide-item w-full flex-shrink-0">
-                                    <img src="/api/placeholder/product/cardpin 942.jpg" alt="Product Image" class="w-full h-auto">
+                                    <img src="<?php echo $fetchsettingwebsitedata['product1']?>" alt="Product Image" class="w-full h-auto">
                                 </div>
                             </div>
                             <!-- Additional slides -->
